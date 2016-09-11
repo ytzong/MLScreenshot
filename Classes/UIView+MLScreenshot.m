@@ -31,7 +31,7 @@
         }
         else
         {
-            [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+            [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
             
             screenshot = UIGraphicsGetImageFromCurrentImageContext();
         }
